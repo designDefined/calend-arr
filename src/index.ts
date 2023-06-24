@@ -4,6 +4,6 @@ const ping = (): boolean => {
 }
 
 
-module.exports = {
+export {
     ping
 };

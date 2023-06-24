@@ -2,12 +2,7 @@
   "name": "calend-arr",
   "version": "0.0.1",
   "type": "module",
-  "main": "dist/index.ts",
-  "scripts": {
-    "prepack": "yarn build",
-    "build": "yarn build:tsc",
-    "build:tsc": "yarn tsc"
-  },
+  "main": "dist/index.js",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -15,9 +10,17 @@
       "require": "./src/index.cjs"
     }
   },
+  "scripts": {
+    "prepack": "yarn build",
+    "build": "yarn clean && yarn build:tsc && yarn build:js",
+    "build:tsc": "yarn tsc --emitDeclarationOnly",
+    "build:js": "node build.js",
+    "clean": "rmdir /s /q dist"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.3.1",
+    "esbuild": "^0.18.7",
     "typescript": "^5.1.3"
   }
 }
