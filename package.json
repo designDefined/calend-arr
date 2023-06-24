@@ -2,13 +2,17 @@
   "name": "calend-arr",
   "version": "0.0.1",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.ts",
+  "scripts": {
+    "prepack": "yarn build",
+    "build": "yarn build:tsc",
+    "build:tsc": "yarn tsc"
+  },
   "exports": {
     ".": {
-      "types": "./index.d.ts",
-      "import": "./index.js",
-      "require": "./index.cjs",
-      "default": "./index.js"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./src/index.cjs"
     }
   },
   "license": "MIT",
