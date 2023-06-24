@@ -1,0 +1,8 @@
+# Package
+node_modules/
+
+# Distribution files
+dist/
+
+# IDE
+.idea/
