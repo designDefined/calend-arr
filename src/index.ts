@@ -229,4 +229,13 @@ const getSampleCalendar = (
   };
 };
 
-export { getMonthlyCalendar, getSampleCalendar };
+export {
+  getMonthlyCalendar,
+  getSampleCalendar,
+  Year,
+  Month,
+  Day,
+  MonthlyCalendar,
+  SampleCalendar,
+  DayOfWeekExpression,
+};
