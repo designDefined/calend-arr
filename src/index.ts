@@ -195,7 +195,7 @@ const getSampleCalendar = (
   const weeks: Week[] = [];
 
   for (let date = startDate; date < startDate + amount; date++) {
-    const dayNumber = ((getDayNumber(startDay) + date - 1) %
+    const dayNumber = ((getDayNumber(startDay) + date - startDate) %
       7) as DayOfWeekNumber;
     const day: Day = {
       month,
