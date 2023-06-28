@@ -1,6 +1,6 @@
 {
   "name": "calend-arr",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple calendar array generator",
   "type": "module",
   "main": "dist/index.js",
